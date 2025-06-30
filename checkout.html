@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | FurniWorld</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      padding: 50px;
+    }
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      width: 50%;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #1e88e5;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Checkout</h1>
+  <form id="checkoutForm">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
+
+    <label for="address">Shipping Address</label>
+    <textarea id="address" rows="4" required></textarea>
+
+    <label for="payment">Payment Method</label>
+    <select id="payment">
+      <option>Credit Card</option>
+      <option>UPI</option>
+      <option>Cash on Delivery</option>
+    </select>
+
+    <button type="submit">Place Order</button>
+  </form>
+</body>
+</html>
